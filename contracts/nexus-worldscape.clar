@@ -268,6 +268,7 @@
       level: u1,
     })
     (var-set total-assets token-id)
+    (print { event: "NEXUS-ASSET-MINTED", token-id: token-id, owner: tx-sender, name: name, rarity: rarity })
     (ok token-id)
   )
 )
